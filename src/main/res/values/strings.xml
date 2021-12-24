@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Offline Storage</string>
+    <string name="Enter_Name">NAME</string>
+    <string name="Your_Age">AGE</string>
+    <string name="enter_Phone_Number">PHONE NUMBER</string>
+    <string name="enter_MailID">MAIL ID</string>
+    <string name="fill_your_details">Fill Your Details</string>
+    <string name="Add_Details">Add Details</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_age">Enter Age</string>
+    <string name="enter_phonenum">Enter PhoneNum</string>
+    <string name="enter_mailid">Enter MailId</string>
+    <string name="update_details1">Update Details</string>
+    <string name="update_details">Update Details</string>
+    <string name="read_all_details">Read Details</string>
+    <string name="name">Name</string>
+    <string name="mailid">Mail Id</string>
+    <string name="age1">Age</string>
+    <string name="phonenum1">PhoneNum</string>
+    <string name="age">Age</string>
+    <string name="phonenum">PhoneNum</string>
+    <string name="update_course">Update Course</string>
+    <string name="edittext_hint"><font size="10">Name</font></string>
+
+    <string name="updatedetails">UpdateDetails</string>
+    <string name="delete_detail">Delete Detail</string>
+    <string name="or">OR</string>
+    <string name="label">label</string>
+    <string name="view_details">View Details</string>
+</resources>

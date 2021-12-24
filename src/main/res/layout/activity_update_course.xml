@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".UpdateCourseActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="12dp"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="50dp"
+        app:cardMaxElevation="100dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="24sp"
+                android:text="@string/update_details"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="12dp" />
+            <!--Edit text to enter course name-->
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/idUptName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginStart="20dp"
+                android:paddingStart="12sp"
+                android:background="@drawable/background"
+                android:textSize="24sp"
+                android:hint="@string/Enter_Name"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                tools:layout_editor_absoluteX="10dp" />
+
+            <!--edit text to enter course duration-->
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/idUptAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/background"
+                android:hint="@string/age"
+                android:textSize="24sp"
+                android:paddingStart="12sp"
+
+                app:layout_constraintTop_toBottomOf="@+id/idUptName"
+                tools:layout_editor_absoluteX="10dp" />
+
+            <!--edit text to display course tracks-->
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/idUptPhnNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/background"
+                android:hint="@string/phonenum"
+                android:paddingStart="12sp"
+
+                android:textSize="24sp"
+
+                app:layout_constraintTop_toBottomOf="@+id/idUptAge"
+                tools:layout_editor_absoluteX="10dp" />
+
+            <!--edit text for course description-->
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/idUptMailId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/background"
+                android:hint="@string/mailid"
+                android:textSize="24sp"
+                android:paddingStart="12sp"
+
+
+                app:layout_constraintTop_toBottomOf="@+id/idUptPhnNum"
+                tools:layout_editor_absoluteX="10dp" />
+
+            <!--button for updating our course-->
+            <Button
+                android:id="@+id/idBtnUpdateDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/updatedetails"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idUptMailId" />
+
+
+            <!--button for deleting our course-->
+            <Button
+                android:id="@+id/idBtnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginStart="12dp"
+                android:text="@string/delete_detail"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idUptMailId" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

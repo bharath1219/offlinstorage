@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient4"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="9dp"
+            android:backgroundTint="@color/white"
+            android:orientation="vertical"
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="50dp"
+            app:cardMaxElevation="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="12dp">
+
+
+            <!--Edit text to enter course name-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/gradiant">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/form"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fill_your_details"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/name"
+                    app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/idEdtName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_marginTop="48dp"
+                        android:background="@drawable/background"
+                        android:inputType="text"
+                        android:paddingStart="12sp"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--edit text to enter course duration-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textField1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Your_Age"
+                    app:layout_constraintTop_toBottomOf="@+id/textField"
+                    tools:ignore="MissingConstraints">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/idEdtAge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_marginTop="48dp"
+                        android:background="@drawable/background"
+                        android:inputType="number"
+                        android:paddingStart="12sp"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintTop_toBottomOf="@+id/idEdtName" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--edit text to display course tracks-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textField2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/phonenum"
+                    app:layout_constraintTop_toBottomOf="@+id/textField1">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/idEdtPhoneNum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_marginTop="48dp"
+                        android:background="@drawable/background"
+                        android:inputType="number"
+                        android:paddingStart="12sp"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintTop_toBottomOf="@+id/idEdtAge" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <!--edit text for course description-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textField3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_MailID"
+                    app:layout_constraintTop_toBottomOf="@+id/textField2">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/idEdtMailID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_marginTop="48dp"
+                        android:background="@drawable/background"
+                        android:inputType="textEmailAddress"
+                        android:paddingStart="12sp"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintTop_toBottomOf="@+id/idEdtAge" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/add_fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/ic_add"
+                    app:fabSize="normal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/idBtnReadDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/white"
+                    app:fabSize="normal"
+                    app:layout_constraintBottom_toTopOf="@+id/add_fab"
+                    app:layout_constraintEnd_toEndOf="@+id/add_fab"
+                    app:layout_constraintStart_toStartOf="@+id/add_fab"
+                    app:srcCompat="@drawable/ic_view_list"
+                    tools:ignore="ContentDescription" />
+                <TextView
+                    android:id="@+id/add_alarm_action_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/view_details"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/idBtnReadDetails"
+                    app:layout_constraintEnd_toStartOf="@+id/idBtnReadDetails"
+                    app:layout_constraintTop_toTopOf="@+id/idBtnReadDetails" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/idBtnAddCourse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    app:fabSize="normal"
+                    android:layout_marginEnd="12dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/add_fab"
+                    app:layout_constraintTop_toBottomOf="@+id/add_alarm_action_text"
+                    app:srcCompat="@drawable/ic_playlist"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/add_person_action_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/Add_Details"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/idBtnAddCourse"
+                    app:layout_constraintEnd_toStartOf="@+id/idBtnAddCourse"
+                    app:layout_constraintTop_toTopOf="@+id/idBtnAddCourse" />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
